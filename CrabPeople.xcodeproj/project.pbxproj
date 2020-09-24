@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119A73FB251C219D00D85645 /* ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A73FA251C219D00D85645 /* ErrorReporting.swift */; };
+		119A73FF251C21C500D85645 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A73FE251C21C500D85645 /* Extension+UIApplication.swift */; };
 		11AC21472514192B000BBD73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC21462514192B000BBD73 /* AppDelegate.swift */; };
 		11AC21502514192E000BBD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AC214F2514192E000BBD73 /* Assets.xcassets */; };
 		11AC21532514192E000BBD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC21512514192E000BBD73 /* LaunchScreen.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		119A73FA251C219D00D85645 /* ErrorReporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporting.swift; sourceTree = "<group>"; };
+		119A73FE251C21C500D85645 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		11AC21432514192B000BBD73 /* CrabPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrabPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AC21462514192B000BBD73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11AC214F2514192E000BBD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			children = (
 				11F2DC0025155FB100B35BB7 /* Constraints.swift */,
 				11F2DD17251A63DD00B35BB7 /* WebImageView.swift */,
+				119A73FE251C21C500D85645 /* Extension+UIApplication.swift */,
+				119A73FA251C219D00D85645 /* ErrorReporting.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 			files = (
 				11F2DC7425180BED00B35BB7 /* NewsFeedModels.swift in Sources */,
 				11F2DC192516CCF400B35BB7 /* NetworkDataFetcher.swift in Sources */,
+				119A73FF251C21C500D85645 /* Extension+UIApplication.swift in Sources */,
 				11F2DC0A2516714C00B35BB7 /* Model.swift in Sources */,
+				119A73FB251C219D00D85645 /* ErrorReporting.swift in Sources */,
 				11F2DC7125180BED00B35BB7 /* NewsFeedPresenter.swift in Sources */,
 				11F2DC2E2517F4D600B35BB7 /* NewsFeedCell.swift in Sources */,
 				11F2DC7525180BED00B35BB7 /* NewsFeedViewController.swift in Sources */,

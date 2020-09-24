@@ -22,7 +22,7 @@ struct NetworkDataFetcher: DataFetcher {
     func getFeed(nextBatchFrom: String?, response: @escaping (Model?) -> Void) {
         networking.request(path: API.newsFeed, cursor: nextBatchFrom) { (data, error) in
             if let error = error {
-                print("Error received requesting data: \(error.localizedDescription)")
+                ErrorReporting.showMessage(title: "Error", msg: error.localizedDescription)
                 response(nil)
             }
             let decoded = self.decodeJSON(type: Model.self, from: data)
