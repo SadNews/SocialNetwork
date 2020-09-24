@@ -13,10 +13,11 @@ protocol NewsFeedBusinessLogic {
 
 class NewsFeedInteractor: NewsFeedBusinessLogic {
     
-    var presenter: NewsFeedPresentationLogic?
     private var feedResponse: ModelData?
-    var cursor: String?
     private var fetcher: DataFetcher = NetworkDataFetcher(networking: NetworkService())
+    private var cursor: String?
+    
+    var presenter: NewsFeedPresentationLogic?
     
     func makeRequest(request: NewsFeed.Model.Request.RequestType) {
         

@@ -13,12 +13,13 @@ protocol NewsFeedDisplayLogic: class {
 
 final class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     
+    private var feedViewModel = FeedViewModel.init(cells: [])
+  
     var interactor: NewsFeedBusinessLogic?
-    
     var router: (NSObjectProtocol & NewsFeedRoutingLogic)?
     let tableView = UITableView()
     // MARK: Object lifecycle
-    private var feedViewModel = FeedViewModel.init(cells: [])
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
