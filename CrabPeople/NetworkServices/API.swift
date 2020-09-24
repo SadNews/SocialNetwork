@@ -12,4 +12,6 @@ struct API {
     static let host = "stage.apianon.ru"
     static let port = 3000
     static let newsFeed = "/fs-posts/v1/posts"
+    static var orderBy = "createdAt"
+
 }

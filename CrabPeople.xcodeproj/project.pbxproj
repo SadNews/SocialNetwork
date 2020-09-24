@@ -17,7 +17,6 @@
 		11F2DC132516B3E600B35BB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC122516B3E600B35BB7 /* NetworkService.swift */; };
 		11F2DC192516CCF400B35BB7 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC182516CCF400B35BB7 /* NetworkDataFetcher.swift */; };
 		11F2DC2E2517F4D600B35BB7 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC2D2517F4D600B35BB7 /* NewsFeedCell.swift */; };
-		11F2DC322517F4FB00B35BB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC312517F4FB00B35BB7 /* Constants.swift */; };
 		11F2DC7125180BED00B35BB7 /* NewsFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC6A25180BED00B35BB7 /* NewsFeedPresenter.swift */; };
 		11F2DC7325180BED00B35BB7 /* NewsFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC6C25180BED00B35BB7 /* NewsFeedRouter.swift */; };
 		11F2DC7425180BED00B35BB7 /* NewsFeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC6D25180BED00B35BB7 /* NewsFeedModels.swift */; };
@@ -51,7 +50,6 @@
 		11F2DC122516B3E600B35BB7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		11F2DC182516CCF400B35BB7 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		11F2DC2D2517F4D600B35BB7 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
-		11F2DC312517F4FB00B35BB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11F2DC6A25180BED00B35BB7 /* NewsFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedPresenter.swift; sourceTree = "<group>"; };
 		11F2DC6C25180BED00B35BB7 /* NewsFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedRouter.swift; sourceTree = "<group>"; };
 		11F2DC6D25180BED00B35BB7 /* NewsFeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModels.swift; sourceTree = "<group>"; };
@@ -82,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119A73F2251C1E1500D85645 /* ShowDetails */ = {
+			isa = PBXGroup;
+			children = (
+				11F2DD46251B012F00B35BB7 /* ShowDetailsViewController.swift */,
+			);
+			path = ShowDetails;
+			sourceTree = "<group>";
+		};
 		11AC213A2514192B000BBD73 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +109,10 @@
 		11AC21452514192B000BBD73 /* CrabPeople */ = {
 			isa = PBXGroup;
 			children = (
+				11F2DC1B2516D5C300B35BB7 /* NewsFeed */,
+				119A73F2251C1E1500D85645 /* ShowDetails */,
 				11F2DC0F2516B20500B35BB7 /* Models */,
 				11F2DC112516B39F00B35BB7 /* NetworkServices */,
-				11F2DC1B2516D5C300B35BB7 /* NewsFeed */,
 				11F2DC032515607200B35BB7 /* SupportFiles */,
 			);
 			path = CrabPeople;
@@ -152,7 +159,6 @@
 				11F2DC6A25180BED00B35BB7 /* NewsFeedPresenter.swift */,
 				11F2DC6D25180BED00B35BB7 /* NewsFeedModels.swift */,
 				11F2DC6C25180BED00B35BB7 /* NewsFeedRouter.swift */,
-				11F2DD46251B012F00B35BB7 /* ShowDetailsViewController.swift */,
 			);
 			path = NewsFeed;
 			sourceTree = "<group>";
@@ -161,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				11F2DC2D2517F4D600B35BB7 /* NewsFeedCell.swift */,
-				11F2DC312517F4FB00B35BB7 /* Constants.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -281,7 +286,6 @@
 				11F2DC7125180BED00B35BB7 /* NewsFeedPresenter.swift in Sources */,
 				11F2DC2E2517F4D600B35BB7 /* NewsFeedCell.swift in Sources */,
 				11F2DC7525180BED00B35BB7 /* NewsFeedViewController.swift in Sources */,
-				11F2DC322517F4FB00B35BB7 /* Constants.swift in Sources */,
 				11F2DC7625180BED00B35BB7 /* NewsFeedInteractor.swift in Sources */,
 				11F2DC0125155FB100B35BB7 /* Constraints.swift in Sources */,
 				11F2DD18251A63DD00B35BB7 /* WebImageView.swift in Sources */,

@@ -28,7 +28,6 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
             self.cursor = feed.cursor
             let cells = feed.items.map { (item) in
                 cellViewModel(from: item)
-                
             }
             
             let feedViewModel = FeedViewModel.init(cells: cells)

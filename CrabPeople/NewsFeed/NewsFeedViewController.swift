@@ -51,7 +51,7 @@ final class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sort button", style: .plain, target: self, action: #selector(tapButton))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Order by \(API.orderBy)", style: .plain, target: self, action: #selector(tapButton))
         navigationItem.rightBarButtonItem?.tintColor = .white
         setupTableView()
         interactor?.makeRequest(request: NewsFeed.Model.Request.RequestType.getNewsFeed)
@@ -66,20 +66,18 @@ final class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     }
     
     @objc func tapButton() {
-        switch navigationItem.rightBarButtonItem?.tag {
-        case 1:
-            navigationItem.rightBarButtonItem?.title = "Order by created at"
-            navigationItem.rightBarButtonItem?.tag = 2
-            Constants.orderBy = "createdAt"
-        case 2:
-            navigationItem.rightBarButtonItem?.title = "Order by most commented"
+        switch API.orderBy {
+        case "createdAt":
+            API.orderBy = "mostCommented"
+        case "mostCommented":
             navigationItem.rightBarButtonItem?.tag = 0
-            Constants.orderBy = "mostCommented"
+            API.orderBy = "mostPopular"
+        case "mostPopular":
+            API.orderBy = "createdAt"
         default:
-            navigationItem.rightBarButtonItem?.title = "Order by most popular"
-            navigationItem.rightBarButtonItem?.tag = 1
-            Constants.orderBy = "mostPopular"
+            print("Error case")
         }
+        navigationItem.rightBarButtonItem?.title = "Order by \(API.orderBy)"
         interactor?.makeRequest(request: NewsFeed.Model.Request.RequestType.getSortedFeed)
 
     }
@@ -122,7 +120,6 @@ extension NewsFeedViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellViewModel = feedViewModel.cells[indexPath.row]
-        print()
         router?.routeToCourseDetails(data: cellViewModel)
     }
     

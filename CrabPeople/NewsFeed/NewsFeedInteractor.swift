@@ -19,7 +19,7 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
     private var fetcher: DataFetcher = NetworkDataFetcher(networking: NetworkService())
     
     func makeRequest(request: NewsFeed.Model.Request.RequestType) {
-
+        
         switch request {
         case .getNewsFeed:
             fetcher.getFeed(nextBatchFrom: nil) { [weak self] (feed) in
@@ -27,6 +27,7 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
                 self?.cursor = feed?.data?.cursor
                 self?.presenter?.presentData(response: NewsFeed.Model.Response.ResponseType.presenNewsFeed(feed: feedResponse))
             }
+            
         case .getNewBranch:
             fetcher.getFeed(nextBatchFrom: cursor) { [weak self] (feed) in
                 if self?.cursor != nil{
@@ -35,12 +36,12 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
                         self?.feedResponse = feedResponse
                     } else {
                         self?.feedResponse?.items.append(contentsOf: (feedResponse.items))
-                    self?.cursor = feed?.data?.cursor
+                        self?.cursor = feed?.data?.cursor
                         guard let newFeed = self?.feedResponse else { return }
                         self?.presenter?.presentData(response: NewsFeed.Model.Response.ResponseType.presenNewsFeed(feed: newFeed))
+                    }
                 }
             }
-        }
             
         case .getSortedFeed:
             self.feedResponse = nil
@@ -50,5 +51,5 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
                 self?.presenter?.presentData(response: NewsFeed.Model.Response.ResponseType.presenNewsFeed(feed: feedResponse))
             }
         }
-}
+    }
 }

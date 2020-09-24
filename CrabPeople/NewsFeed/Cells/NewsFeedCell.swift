@@ -61,13 +61,14 @@ final class NewsFeedCodeCell: UITableViewCell {
         return label
     }()
     
-    var imageLabel: WebImageView = {
+    let imageLabel: WebImageView = {
         var imageView = WebImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
         return imageView
     }()
+    
     let imagePost: WebImageView = {
         let imageView = WebImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

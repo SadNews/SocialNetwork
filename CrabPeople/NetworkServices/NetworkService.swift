@@ -30,7 +30,7 @@ final class NetworkService: Networking {
     
     func url( cursor: String?) -> URL {
         var components = URLComponents()
-        var params = ["orderBy": Constants.orderBy]
+        var params = ["orderBy": API.orderBy]
         params["cursor"] = cursor
         components.scheme = API.scheme
         components.host = API.host
