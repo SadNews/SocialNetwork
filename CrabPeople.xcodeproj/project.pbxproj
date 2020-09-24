@@ -86,6 +86,15 @@
 			path = ShowDetails;
 			sourceTree = "<group>";
 		};
+		119A73F7251C1FF200D85645 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11F2DC0025155FB100B35BB7 /* Constraints.swift */,
+				11F2DD17251A63DD00B35BB7 /* WebImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		11AC213A2514192B000BBD73 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +118,9 @@
 			children = (
 				11F2DC1B2516D5C300B35BB7 /* NewsFeed */,
 				119A73F2251C1E1500D85645 /* ShowDetails */,
-				11F2DC0F2516B20500B35BB7 /* Models */,
 				11F2DC112516B39F00B35BB7 /* NetworkServices */,
+				11F2DC0F2516B20500B35BB7 /* Models */,
+				119A73F7251C1FF200D85645 /* Helpers */,
 				11F2DC032515607200B35BB7 /* SupportFiles */,
 			);
 			path = CrabPeople;
@@ -120,11 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				11AC21462514192B000BBD73 /* AppDelegate.swift */,
-				11F2DD17251A63DD00B35BB7 /* WebImageView.swift */,
 				11AC214F2514192E000BBD73 /* Assets.xcassets */,
 				11AC21542514192E000BBD73 /* Info.plist */,
 				11AC21512514192E000BBD73 /* LaunchScreen.storyboard */,
-				11F2DC0025155FB100B35BB7 /* Constraints.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
