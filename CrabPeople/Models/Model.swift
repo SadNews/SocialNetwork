@@ -9,7 +9,7 @@ import Foundation
 
 struct Model: Decodable {
     var data: ModelData?
-    let errors: JSONNull
+    let errors: String?
 }
 
 // MARK: - ModelData
@@ -21,16 +21,12 @@ struct ModelData: Decodable {
 // MARK: - Item
 struct Item: Decodable {
     let id: String?
-    let replyOnPostId: JSONNull
     let type, status: String?
-    let hidingReason: JSONNull
     let coordinates: Coordinates?
     let isCommentable, hasAdultContent, isAuthorHidden, isHiddenInProfile: Bool?
     let contents: [Content]?
     let language: String?
-    let awards: Awards?
     let createdAt, updatedAt: Double?
-    let page: JSONNull
     let author: Author?
     let stats: Stats?
     let isMyFavorite: Bool?
@@ -39,7 +35,7 @@ struct Item: Decodable {
 // MARK: - Author
 struct Author: Decodable {
     let id: String?
-    let url: JSONNull
+    let url: String?
     let name: String?
     let banner: Banner?
     let photo: Photo?
@@ -102,13 +98,6 @@ struct Statistics: Decodable {
     let thanksNextLevel: Int?
 }
 
-// MARK: - Awards
-struct Awards: Decodable {
-    let recent, statistics: [JSONAny]
-    let voices: Int?
-    let awardedByMe: Bool?
-}
-
 // MARK: - Content
 struct Content: Decodable {
     let type: String?
@@ -126,7 +115,6 @@ struct ContentData: Decodable {
 // MARK: - Coordinates
 struct Coordinates: Decodable {
     let latitude, longitude: Double?
-    let zoom: JSONNull
 }
 
 // MARK: - Stats

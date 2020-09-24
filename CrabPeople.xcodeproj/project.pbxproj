@@ -13,7 +13,6 @@
 		11F2DC0125155FB100B35BB7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC0025155FB100B35BB7 /* Constraints.swift */; };
 		11F2DC062515679100B35BB7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC052515679100B35BB7 /* API.swift */; };
 		11F2DC0A2516714C00B35BB7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC092516714C00B35BB7 /* Model.swift */; };
-		11F2DC0D2516B1E800B35BB7 /* DecodeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC0C2516B1E800B35BB7 /* DecodeHelpers.swift */; };
 		11F2DC132516B3E600B35BB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC122516B3E600B35BB7 /* NetworkService.swift */; };
 		11F2DC192516CCF400B35BB7 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC182516CCF400B35BB7 /* NetworkDataFetcher.swift */; };
 		11F2DC2E2517F4D600B35BB7 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2DC2D2517F4D600B35BB7 /* NewsFeedCell.swift */; };
@@ -46,7 +45,6 @@
 		11F2DC0025155FB100B35BB7 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		11F2DC052515679100B35BB7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		11F2DC092516714C00B35BB7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		11F2DC0C2516B1E800B35BB7 /* DecodeHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeHelpers.swift; sourceTree = "<group>"; };
 		11F2DC122516B3E600B35BB7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		11F2DC182516CCF400B35BB7 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		11F2DC2D2517F4D600B35BB7 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		11F2DC0F2516B20500B35BB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				11F2DC0C2516B1E800B35BB7 /* DecodeHelpers.swift */,
 				11F2DC092516714C00B35BB7 /* Model.swift */,
 			);
 			path = Models;
@@ -282,7 +279,6 @@
 				11F2DC7425180BED00B35BB7 /* NewsFeedModels.swift in Sources */,
 				11F2DC192516CCF400B35BB7 /* NetworkDataFetcher.swift in Sources */,
 				11F2DC0A2516714C00B35BB7 /* Model.swift in Sources */,
-				11F2DC0D2516B1E800B35BB7 /* DecodeHelpers.swift in Sources */,
 				11F2DC7125180BED00B35BB7 /* NewsFeedPresenter.swift in Sources */,
 				11F2DC2E2517F4D600B35BB7 /* NewsFeedCell.swift in Sources */,
 				11F2DC7525180BED00B35BB7 /* NewsFeedViewController.swift in Sources */,
